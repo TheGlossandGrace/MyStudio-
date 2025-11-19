@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Gloss & Grace — Nail Studio</title>
+
+  <style>
+    :root{
+      --bg:#fff7fb;
+      --card:#ffffff;
+      --accent:#e75480;
+      --accent-2:#c96a92;
+      --muted:#7a5567;
+      --glass: rgba(255,255,255,0.7);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Segoe UI', Inter, Arial, sans-serif;
+      background: linear-gradient(180deg,var(--bg),#fff);
+      color:#2b2130;
+    }
+
+    .wrap{max-width:1100px;margin:18px auto;padding:20px}
+
+    /* NAVIGATION */
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:70px;height:70px;border-radius:14px;object-fit:cover}
+
+    .nav-links{display:flex;gap:12px;align-items:center}
+    .nav-links a{
+      padding:8px 12px;border-radius:10px;
+      text-decoration:none;color:var(--muted);font-weight:600
+    }
+    .nav-links a:hover{background:rgba(231,84,128,0.08);color:var(--accent)}
+
+    /* Instagram Button */
+    .insta-btn{
+      background:linear-gradient(90deg,#f77737,#c13584);
+      padding:8px 12px;border-radius:10px;
+      color:white;text-decoration:none;font-weight:700;
+    }
+
+    /* HERO SECTION */
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:22px;margin-top:18px}
+    @media (max-width:880px){ .hero{grid-template-columns:1fr} }
+
+    .hero-card{
+      background:white;padding:26px;border-radius:16px;
+      box-shadow:0 10px 40px rgba(203,144,159,0.12);
+    }
+    .headline{font-size:28px;color:var(--accent)}
+    .sub{color:#6b5160}
+
+    .btn{padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white}
+    .btn-outline{border:2px solid var(--accent);color:var(--accent)}
+
+    .card-side img{width:100%;max-width:320px;border-radius:14px;margin-bottom:12px;box-shadow:0 8px 24px rgba(0,0,0,0.12)}
+
+    /* Services Section */
+    .services-section{
+      margin-top:24px;background:var(--card);padding:22px;border-radius:14px;
+      box-shadow:0 8px 28px rgba(221,175,200,0.08);
+    }
+    .services-section h2{color:var(--accent);text-align:center;margin-bottom:12px}
+    .service-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width:720px){.service-list{grid-template-columns:1fr}}
+    .service-item{padding:10px;border-radius:10px;background:#fff1f6;border:1px solid #ffd1e5}
+    .service-item span{float:right;font-weight:700;color:var(--accent)}
+
+    /* COURSES */
+    .sections{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:18px}
+    @media(max-width:880px){ .sections{grid-template-columns:1fr} }
+
+    .course{background:white;padding:18px;border-radius:12px;box-shadow:0 8px 28px rgba(0,0,0,0.04)}
+    .fee{text-align:center;margin-top:12px;padding:10px;border-radius:10px;background:#fff0f4;color:var(--accent);font-weight:700}
+
+    /* CONTACT */
+    .contact-section{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:20px}
+    @media(max-width:880px){ .contact-section{grid-template-columns:1fr} }
+
+    .contact-card{
+      background:white;padding:18px;border-radius:12px;
+      box-shadow:0 8px 28px rgba(0,0,0,0.05);
+    }
+
+    /* BOOKING FORM */
+    #booking input, #booking select, #booking textarea{
+      width:100%;padding:10px;border-radius:8px;
+      border:1px solid #f0d6df;margin-bottom:10px
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-wa{
+      position:fixed;
+      right:15px;
+      bottom:15px;
+      background:#25D366;
+      color:white;
+      padding:12px 18px;
+      border-radius:50px;
+      font-weight:700;
+      text-decoration:none;
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+      z-index:999;
+    }
+
+    footer{text-align:center;margin-top:20px;color:#6b5160;font-size:14px}
+  </style>
+</head>
+
+<body>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/917832977329" class="floating-wa" target="_blank">
+    WhatsApp Chat
+  </a>
+
+  <div class="wrap">
+
+    <!-- NAVIGATION -->
+    <nav>
+      <div class="brand">
+        <img src="C:\Users\ns039\Downloads\The Gloss & Grace\Images\Card Front.jpeg">
+        <div>
+          <h1 style="margin:0;color:var(--accent)">The Gloss & Grace</h1>
+          <div style="font-size:13px;color:var(--muted)">Professional Nail Studio</div>
+        </div>
+      </div>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#courses">Courses</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+
+        <!-- Instagram -->
+        <a class="insta-btn" href="https://instagram.com/the_gloss_grace" target="_blank">Instagram</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-card">
+        <div class="headline">Welcome to The Gloss & Grace</div>
+        <div class="sub">Premium nail services • Professional training • Small batches</div>
+
+        <div style="margin-top:12px">
+          <a class="btn btn-primary" href="https://wa.me/917832977329" target="_blank">Book Appointment</a>
+          <a class="btn btn-outline" href="#services">View Services</a>
+        </div>
+
+        <div style="display:flex;gap:10px;margin-top:20px;flex-wrap:wrap">
+          <div style="background:var(--glass);padding:10px;border-radius:10px;color:var(--accent);font-weight:700">Hygienic Tools</div>
+          <div style="background:var(--glass);padding:10px;border-radius:10px;color:var(--accent);font-weight:700">Premium Products</div>
+          <div style="background:var(--glass);padding:10px;border-radius:10px;color:var(--accent);font-weight:700">Placement Support</div>
+        </div>
+      </div>
+
+      <aside class="card-side">
+        <img src="C:\Users\ns039\Downloads\The Gloss & Grace\Images\Card Front.jpeg">
+        <img src="C:\Users\ns039\Downloads\The Gloss & Grace\Images\Card Back.jpeg" alt="Card Back">
+      </aside>
+    </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services-section">
+    <h2>Client Services & Price List</h2>
+
+    <div class="service-list">
+      <div class="service-item">Poly Gel Nail Extensions <span>₹1300</span></div>
+      <div class="service-item">Soft Gel Extensions <span>₹1100</span></div>
+      <div class="service-item">Acrylic Nail Extensions <span>₹1500</span></div>
+      <div class="service-item">Semi Permanent Nail Extensions <span>₹600</span></div>
+
+      <div class="service-item">Feet Semi Permanent Extensions <span>₹600</span></div>
+      <div class="service-item">Feet Gel Extensions <span>₹1000</span></div>
+      <div class="service-item">Feet Power Polish <span>₹400</span></div>
+
+      <div class="service-item">Refill Gel <span>₹700</span></div>
+      <div class="service-item">Refill Acrylic <span>₹800</span></div>
+      <div class="service-item">Gel/Acrylic Extensions Removal <span>₹300</span></div>
+
+      <div class="service-item">Power Polish (Shellac) <span>₹400</span></div>
+      <div class="service-item">BIAB (Builder on Natural Nails) <span>₹500</span></div>
+      <div class="service-item">Nail Art on Natural Nails <span>₹600</span></div>
+    </div>
+
+    <p style="text-align:center;margin-top:10px;color:#7a5567;">* Nail Art & Accessories charges extra</p>
+  </section>
+    <!-- COURSES -->
+    <section id="courses" class="sections" aria-labelledby="courses-heading">
+      <!-- Basic Course -->
+      <div class="course" role="region" aria-label="Basic Nail Course">
+        <h3>Basic Nail Course</h3>
+        <p>Start your nail journey with fundamentals — ideal for beginners and hobbyists who want a strong foundation.</p>
+
+        <ul>
+          <li>Nail Anatomy & Health</li>
+          <li>Sanitation & Client Safety</li>
+          <li>Dry Manicure & Basic Shaping</li>
+          <li>Basic Gel Application & Gel Overlay</li>
+          <li>Soft Gel & Poly Gel Introduction</li>
+          <li>Simple Nail Art & Finishes</li>
+          <li>Nail Removal & Aftercare</li>
+        </ul>
+
+        <div class="fee">COURSE FEES: <span style="font-size:18px">₹20,000</span> — (Duration: 4 weeks)</div>
+      </div>
+
+      <!-- Advance Course -->
+      <div class="course" role="region" aria-label="Advance Nail Course">
+        <h3>Advance Nail Course</h3>
+        <p>For aspirants who want to work professionally — deep dive into sculpting, advanced art and salon workflows.</p>
+
+        <ul>
+          <li>Advanced Anatomy & Troubleshooting</li>
+          <li>E-File Mastery & Speed Techniques</li>
+          <li>Acrylic Sculpting & In-Built Tips</li>
+          <li>Advanced Gel Tips & Refills</li>
+          <li>3D & Advanced Nail Art (Foils, Chrome, Stones)</li>
+          <li>Salon Management Basics & Client Handling</li>
+          <li>Live Model Practice & Certification</li>
+        </ul>
+
+        <div class="fee">COURSE FEES: <span style="font-size:18px">₹25,000</span> — (Duration: 6 weeks)</div>
+      </div>
+    </section>
+    <!-- BOOKING -->
+    <section id="booking" style="margin-top:35px">
+      <h2 style="color:var(--accent);text-align:center">Book Your Appointment</h2>
+
+      <div class="contact-card" style="max-width:600px;margin:0 auto">
+        <form>
+          <input id="name" type="text" placeholder="Your Name">
+          <input id="phone" type="text" placeholder="Phone Number">
+          <select id="service">
+            <option>Select Service</option>
+            <option>Poly Gel Extensions</option>
+            <option>Soft Gel Extensions</option>
+            <option>Acrylic Extensions</option>
+            <option>Refill</option>
+            <option>Nail Art</option>
+            <option>Basic Course — ₹20,000</option>
+            <option>Advance Course — ₹25,000</option>
+          </select>
+          <textarea id="message" placeholder="Message / Preferred Time"></textarea>
+
+          <a id="sendBtn" class="btn btn-primary" style="display:block;text-align:center" target="_blank">
+            Book on WhatsApp
+          </a>
+
+
+	<script>
+	document.getElementById("sendBtn").onclick = function() {
+
+   	 let name = document.getElementById("name").value;
+   	 let phone = document.getElementById("phone").value;
+   	 let service = document.getElementById("service").value;
+   	 let message = document.getElementById("message").value;
+
+   	 let finalMessage = 
+	`🌸 Welcome In The Gloss & Grace Family 🌸
+
+	Hello ${name},  
+	We have received your appointment request. Our team will get back to you shortly.
+
+	📌 Appointment Details
+	Name: ${name}
+	Phone: ${phone}
+	Service: ${service}
+	Message: ${message}
+
+	🙏 Thank you for choosing us!`;
+
+ 	   let encoded = encodeURIComponent(finalMessage);
+
+	    let whatsappNumber = "917383972729";
+
+	    this.href="https://wa.me/917832977329?text="+encoded;
+	};
+	</script>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="contact-card">
+        <h3 style="color:var(--accent)">Contact Details</h3>
+        <p><strong>Location:</strong> 99-H Block, Sri Ganganagar</p>
+        <p><strong>Phone:</strong> +91 78329-77329</p>
+        <p><strong>Timings:</strong> 8 AM – 8 PM</p>
+      </div>
+
+      <div class="contact-card">
+        <h3 style="color:var(--accent)">Quick Enroll</h3>
+        <a class="btn btn-primary" href="https://wa.me/917832977329" target="_blank">WhatsApp Now</a>
+      </div>
+    </section>
+
+    <footer>© 2025 The Gloss & Grace — Nail Studio. All Rights Reserved.</footer>
+
+  </div>
+</body>
+</html>
